@@ -1,8 +1,6 @@
 .products {
     .product-item {
         text-align: center;
-        border-bottom:solid 1px $light-color;
-        border-top:solid 1px $light-color;
 
         &:nth-child(odd) {
             border-left:solid 1px $light-color;
