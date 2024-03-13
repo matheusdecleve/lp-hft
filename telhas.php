@@ -38,7 +38,7 @@ get_header();
                             <div class="box-padding">
                                 <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="w-100">
                                 <b><?php the_title(); ?></b>
-                                <p><?php the_content(); ?></p>
+                                <p><?php the_field('small_description'); ?></p>
                                 <a href="<?php the_permalink(); ?>" class="btn btn-primary">VER MAIS</a>
                             </div>
                         </div>

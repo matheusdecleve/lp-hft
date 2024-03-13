@@ -38,7 +38,7 @@ get_header();
                             <div class="box-padding">
                                 <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="w-100">
                                 <b><?php the_title(); ?></b>
-                                <p><?php the_content(); ?></p>
+                                <p><?php the_field('small_description'); ?></p>
                                 <a href="<?php the_permalink(); ?>" class="btn btn-primary">VER MAIS</a>
                             </div>
                         </div>
@@ -49,27 +49,19 @@ get_header();
         </div>
     </section>
 
-    <section class="section-default section-bignumbers">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-12 col-md-3">
-                    <h2>+20</h2>
-                    <p>colaboradores</p>
-                </div>
-                <div class="col-12 col-md-3">
-                    <h2>+25</h2>
-                    <p>anos no mercado</p>
-                </div>
-                <div class="col-12 col-md-3">
-                    <h2>+76000</h2>
-                    <p>de equipamentos entregue</p>
-                </div>
-                <div class="col-12 col-md-3">
-                    <h2>+2000m²</h2>
-                    <p>de área construida</p>
+    <?php if( have_rows('big_number','option') ) { ?>
+        <section class="section-default section-bignumbers bg-col" id="<?php the_field('bignumbers_id','option'); ?>" style="background-image:url('<?php the_field('bignumbers_bg_img','option'); ?>');background-color:<?php the_field('bignumbers_bg_color','option'); ?>">
+            <div class="container">
+                <div class="row text-center">
+                    <?php while ( have_rows('big_number','option') ) : the_row(); ?>
+                        <div class="col-12 col-md">
+                            <h2 style="color:<?php the_field('bignumbers_text_color','option'); ?>"><?php the_sub_field('bignumber_number','option'); ?></h2>
+                            <p style="color:<?php the_field('bignumbers_text_color','option'); ?>"><?php the_sub_field('bignumber_description','option'); ?></p>                                
+                        </div>
+                    <?php endwhile; ?>                    
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    <?php } ?>
 
 <?php get_footer(); ?>

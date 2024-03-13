@@ -10,6 +10,7 @@
                 </div>
                 <div class="col-12 col-md-6">
                     <h2><?php the_title(); ?></h2>
+                    <span><?php the_field('small_description'); ?></span>
                     <hr />
                     <div class="single-content">
                         <?php the_content(); ?>
