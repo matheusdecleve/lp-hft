@@ -1,0 +1,41 @@
+footer.footer {
+    padding: 80px 0 0;
+
+    .row {
+        &:last-child {
+            margin-top: 60px;
+            padding: 24px 0;
+            border-top: solid 1px $light-color;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--primary-color);
+    }
+
+    svg {
+        display: inline-block;
+        margin-right: 8px;
+        width: 32px;
+        height: auto;
+        fill: var(--primary-color);
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+
+    small {
+        font-weight: 400;
+    }
+}
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 32px;
+    right: 24px;
+    z-index: 999;
+    width: 70px;
+    height: auto;
+}

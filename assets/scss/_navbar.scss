@@ -1,0 +1,43 @@
+.navbar {
+    height: 80px;
+    
+    .navbar-nav {
+        margin-left:auto;
+
+        li.nav-item {
+            margin: 0 12px;
+
+            &:before {
+                display: none;
+            }
+
+            a {
+
+                &:hover {
+                    color: var(--primary-color);
+                }
+            }
+        }
+    }
+
+    .navbar-collapse {
+        z-index:99;
+    }
+}
+
+@media screen and(max-width: 500px) { 
+    .navbar {
+        .container {
+            padding: 0;
+        }
+        .navbar-nav {        
+            z-index:99;
+            background: #fff;
+            padding-left: 12px;
+        }
+        .navbar-brand {
+            padding-left: 12px;
+        }
+    }
+    
+}
