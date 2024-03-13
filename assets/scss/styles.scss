@@ -159,6 +159,14 @@ ul {
 }
 
 .single-post {
+    padding-top: 80px;
+    padding-bottom: 120px;
+
+    .container.text {
+        margin-top: -25vh;
+        padding: 5vw;
+    }
+    
     .hr {
         background:#ccc;
         height:1px;
