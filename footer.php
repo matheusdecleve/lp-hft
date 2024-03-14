@@ -66,6 +66,8 @@
     </a>
 <?php endif; ?>
 
+<?php the_field('code_footer','option'); ?>
+
 <?php wp_footer(); ?>
 
 </body>

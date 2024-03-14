@@ -52,7 +52,7 @@
                     <?php } ?>
                 </div>
                 <div class="col-12 col-md-6 two">
-                    <div class="box-padding">
+                    <div class="box-padding sombra">
                         <div class="section-title">
                         <?php if(get_field('col2_subtitle')) { ?>
                             <b class="subtitle"><?php the_field('col2_subtitle'); ?></b>

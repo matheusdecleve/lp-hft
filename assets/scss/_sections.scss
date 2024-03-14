@@ -9,15 +9,18 @@
 }
 
 .section-header {
-    .col-12 {
-        background: #fff;;
-        padding: 0 !important;
+    .col-12 {      
+
         &.one {
             border-radius: 8px;
-            position:relative;
-            z-index:2;
+            position:relative;           
             margin-top: -80px;
             border-right: solid 1px #eee;
+            border-bottom-right-radius: 0;
+            box-shadow: 0 0 15px rgba(0,0,0,.2);
+            z-index:2;
+            background: #fff;;
+            padding: 0 !important;
 
             .icon {
                 width: 80px;
@@ -26,8 +29,18 @@
             }
         }
         &.two {
+            margin-top: -40px;
             border-top-right-radius: 8px;   
             border-bottom-right-radius: 8px;   
+            padding: 0 !important;
+        }
+        .sombra {
+            border-top-right-radius: 8px;   
+            border-bottom-right-radius: 8px;
+            position: relative;
+            z-index: 2;
+            background: #FFF;
+            box-shadow: 0 0 15px rgba(0,0,0,.2);
         }
     }
     .icon-header {

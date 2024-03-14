@@ -34,7 +34,7 @@ get_header();
                     while($post_query->have_posts() ) {
                     $post_query->the_post(); ?>
 
-                        <div class="col-12 col-md-3 product-item">
+                        <div class="col-12 col-md-4 product-item">
                             <div class="box-padding">
                                 <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="w-100">
                                 <b><?php the_title(); ?></b>
