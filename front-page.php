@@ -8,19 +8,17 @@
                     <div class="slide" style="background-image: url('<?php the_sub_field('img_desktop'); ?>');">
                         <div class="overlay"></div>
                         <div class="container">
-
-                        <?php if($count == 0) { ?>
-                            <div class="row wow animate__animated animate__fadeInLeft">
-                        <?php } else { ?>
-                            <div class="row">
-                        <?php } ?>
+                            <?php if($count == 0) { ?>
+                                <div class="row wow animate__animated animate__fadeInLeft">
+                            <?php } else { ?>
+                                <div class="row">
+                            <?php } ?>
                                 <div class="col-12 col-md-6">
                                     <h1><?php the_sub_field('slide_title'); ?></h1>
                                     <p><?php the_sub_field('slide_description'); ?></p>
                                     <a id="<?php the_field('section_header_id'); ?>" href="<?php the_sub_field('slide_btn_link'); ?>" class="btn btn-primary btn-lg"><?php the_sub_field('slide_btn_text'); ?></a>
                                 </div>
                             </div>
-
                         </div>
                     </div>                    
                 <?php $count++ ;endwhile; ?>
@@ -75,7 +73,7 @@
         <section class="section-default bg-light pt-0" id="<?php the_field('zigzag_id'); ?>">
             <div class="container">
                 <div class="row section-title">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6 no-padding">
                         <b class="subtitle"><?php the_field('zigzag_subtitle'); ?></b>
                         <h2><?php the_field('zigzag_title'); ?></h2>
                     </div>
@@ -83,8 +81,9 @@
 
                 <?php while ( have_rows('linhas') ) : the_row();
                     if(get_sub_field('zigzag_row_layout') == 'esq') { ?>
-                        <div class="row bg-white">
-                            <div class="col-12 col-md-6 wow animate__animated animate__fadeInLeft">
+                        <div class="row bg-white">                            
+                            <div class="col-12 col-md-6 bg-col border-rounded-right wow animate__animated animate__fadeInRight column-img order-0 order-lg-1" style="background-image:url('<?php the_sub_field('zigzag_row_img'); ?>');"></div>
+                            <div class="col-12 col-md-6 wow animate__animated animate__fadeInLeft order-1 order-lg-0">
                                 <div class="box-padding-lg">
                                     <b class="subtitle"><?php the_sub_field('zigzag_row_subtitle'); ?></b>
                                     <h3><?php the_sub_field('zigzag_row_title'); ?></h3>
@@ -94,11 +93,10 @@
                                     <?php } ?>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 bg-col border-rounded-right wow animate__animated animate__fadeInRight" style="background-image:url('<?php the_sub_field('zigzag_row_img'); ?>');"></div>
                         </div>
                     <?php } elseif(get_sub_field('zigzag_row_layout') == 'dir') { ?>
                         <div class="row bg-white">
-                            <div class="col-12 col-md-6 bg-col border-rounded-left wow animate__animated animate__fadeInLeft" style="background-image:url('<?php the_sub_field('zigzag_row_img'); ?>');"></div>
+                            <div class="col-12 col-md-6 bg-col border-rounded-left wow animate__animated animate__fadeInLeft column-img" style="background-image:url('<?php the_sub_field('zigzag_row_img'); ?>');"></div>
                             <div class="col-12 col-md-6 wow animate__animated animate__fadeInRight">
                                 <div class="box-padding-lg">
                                     <b class="subtitle"><?php the_sub_field('zigzag_row_subtitle'); ?></b>
@@ -193,13 +191,13 @@
                 <?php while ( have_rows('politics_row') ) : the_row(); ?>
                     <?php if(get_sub_field('politics_layout') == 'esq') { ?>
                         <div class="row">
-                            <div class="col-12 col-md-6 wow animate__animated animate__fadeInLeft" style="background-image: url(<?php the_sub_field('politics_img'); ?>"></div>
-                            <div class="col-12 col-md-6 wow animate__animated animate__fadeInRight">
+                            <div class="col-12 col-md-6 wow animate__animated animate__fadeInRight order-0 order-lg-1">
                                 <div class="box-padding-lg">
                                     <h3><?php the_sub_field('politics_title'); ?></h3>
                                     <p><?php the_sub_field('politics_content'); ?></p>
                                 </div>
                             </div>
+                            <div class="col-12 col-md-6 wow animate__animated animate__fadeInLeft column-img order-1 order-lg-0" style="background-image: url(<?php the_sub_field('politics_img'); ?>"></div>
                         </div>
                     <?php } elseif(get_sub_field('politics_layout') == 'dir') { ?>
                         <div class="row">
@@ -209,7 +207,7 @@
                                     <p><?php the_sub_field('politics_content'); ?></p>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 wow animate__animated animate__fadeInRight" style="background-image: url(<?php the_sub_field('politics_img'); ?>"></div>
+                            <div class="col-12 col-md-6 wow animate__animated animate__fadeInRight column-img" style="background-image: url(<?php the_sub_field('politics_img'); ?>"></div>
                         </div>
                     <?php } ?>
                 <?php endwhile; ?>

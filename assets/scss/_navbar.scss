@@ -1,43 +1,127 @@
-.navbar {
-    height: 80px;
-    
-    .navbar-nav {
-        margin-left:auto;
-
-        li.nav-item {
-            margin: 0 12px;
-
-            &:before {
-                display: none;
-            }
-
-            a {
-
-                &:hover {
-                    color: var(--primary-color);
-                }
-            }
-        }
-    }
-
-    .navbar-collapse {
-        z-index:99;
-    }
+* {
+	box-sizing:border-box;
 }
 
-@media screen and(max-width: 500px) { 
-    .navbar {
-        .container {
-            padding: 0;
-        }
-        .navbar-nav {        
-            z-index:99;
-            background: #fff;
-            padding-left: 12px;
-        }
-        .navbar-brand {
-            padding-left: 12px;
-        }
-    }
-    
+.mainNavbar {
+	width:100%;		
+	position: fixed;
+    top: 0;
+    background: white;
+    z-index: 999;
+}
+
+.mainNavbar .container {
+	max-width: 1170px;
+	height:80px;
+	margin: 0 auto;
+	
+	display:flex;
+	justify-content:space-between;
+	align-content:center;
+	align-items:center;
+}
+
+.mainNavbar__logo {
+	width:20%;
+}
+
+.mainNavbar__logo svg {
+	width:150px;
+}
+
+.mainNavbar__nav--desktop {
+	width:80%;
+	display:flex;
+	justify-content:flex-end;
+}
+
+.mainNavbar__nav--desktop ul {
+	display:flex;	
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+.mainNavbar__nav--desktop ul li {
+	margin:0 10px;	
+}
+
+.mainNavbar__nav--desktop ul li a {
+	font-size:16px;
+	font-weight:bold;
+	text-decoration:none;
+	transition:.2s;
+	color:#808284;
+}
+
+.mainNavbar__nav--desktop ul li a:hover {
+	color:#1b1b1b;
+}
+
+
+.mainNavbar__hamburguer { 
+	width:60px;
+	padding:2px;
+	cursor:pointer;
+}
+
+.mainNavbar__hamburguer .bar { 
+	width:50px;
+	height:3px;
+	margin:10px 0;
+	background:#1b1b1b;
+}
+
+.mainNavbar__hamburguer .bar.activer { 
+	opacity: .8;
+}
+
+.mainNavbar__nav--mobile {	
+	width:100%;
+	height:calc(100vh - 80px);
+	position:fixed;
+	top:80px;
+	background:#fff;
+	z-index:888;
+	display:none;
+	transition:.2s;
+}
+
+.mainNavbar__nav--mobile ul {
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+
+.mainNavbar__nav--mobile ul li {
+	margin:40px auto 20px auto;
+
+	&:before {
+		display: none;
+	}
+}	
+
+
+.mainNavbar__nav--mobile ul li a {
+	color:#1b1b1b;
+	font-size: 20px;
+	line-height: 20px;
+	font-weight: 700;
+	text-decoration:none;
+}
+
+.mainNavbar__nav--mobile.opened {
+	display:block;
+}
+
+@media screen and(min-width:764px){
+	.mainNavbar__hamburguer {
+   	display:none;
+	}
+}
+
+@media screen and(max-width:763px){
+	.mainNavbar__nav--desktop {
+		display: none;		
+	}
 }

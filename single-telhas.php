@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row d-flex align-items-center">
                 <div class="col-12 col-md-5">
-                    <div class="border rounded">
+                    <div class="border rounded mb-5">
                         <img src="<?php the_post_thumbnail_url(); ?>" class="mb-lg-5 w-100" alt="<?php the_title(); ?>">                    
                     </div>
                 </div>

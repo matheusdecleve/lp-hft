@@ -39,12 +39,14 @@ class Pizzani
 		wp_register_style('owlcarousel', THEME_URL . 'assets/css/owlcarousel/owl.carousel.min.css', null, null, 'all');
 		wp_register_style('owlcarouseltheme', THEME_URL . 'assets/css/owlcarousel/owl.theme.default.min.css', null, null, 'all');
 		wp_register_style('styles', THEME_URL . 'assets/css/styles.css', null, null, 'all');		
+		wp_register_style('styles-mobile', THEME_URL . 'assets/css/styles-mobile.css', null, null, '(max-width: 768px)');
 		wp_register_style('animate', THEME_URL . 'assets/css/animate.min.css', null, null, 'all');		
 
 		wp_enqueue_style('bootstrap');
 		wp_enqueue_style('owlcarousel');
 		wp_enqueue_style('owlcarouseltheme');
 		wp_enqueue_style('styles');
+		wp_enqueue_style('styles-mobile');
 		wp_enqueue_style('animate');
 
 		wp_register_script('bootstrapbundle', THEME_URL . 'assets/js/bootstrap.bundle.min.js', array(), '0.1.', true);

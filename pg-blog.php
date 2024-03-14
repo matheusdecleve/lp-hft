@@ -35,7 +35,7 @@ get_header();
                 while($post_query->have_posts() ) {
                 $post_query->the_post(); ?>
 
-                    <div class="col-12 col-md-3 mb-lg-5 wow animate__animated animate__fadeInUp">
+                    <div class="col-12 col-md-3 mb-5 wow animate__animated animate__fadeInUp">
                         <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
                         <small class="d-block my-2"><?php echo get_the_date( 'j \d\e F \d\e Y' ); ?></small>
                         <h3><?php the_title(); ?></h3>

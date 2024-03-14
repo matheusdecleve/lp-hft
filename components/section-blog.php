@@ -5,7 +5,7 @@
                 <b class="subtitle"><?php the_field('blog_subtitle'); ?></b>
                 <h2><?php the_field('blog_title'); ?></h2>
             </div>
-            <div class="col-12 col-md-6 d-flex justify-content-end">
+            <div class="col-12 col-md-6 d-none d-md-flex justify-content-end">
                 <a href="<?php bloginfo('url'); ?>/blog" class="btn btn-primary">IR PARA O BLOG</a>
             </div>
         </div>
@@ -22,7 +22,7 @@
                 while($post_query->have_posts() ) {
                 $post_query->the_post(); ?>
 
-                    <div class="col-12 col-md-4 mb-lg-5 wow animate__animated animate__fadeInUp">
+                    <div class="col-12 col-md-4 mb-5 wow animate__animated animate__fadeInUp">
                         <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
                         <small class="d-block my-2"><?php echo get_the_date( 'j \d\e F \d\e Y' ); ?></small>
                         <h3><?php the_title(); ?></h3>
@@ -32,5 +32,10 @@
                 <?php }
             } ?>                    
         </div> 
+        <div class="row d-flex d-md-none text-center">
+            <div class="col-12">
+                <a href="<?php bloginfo('url'); ?>/blog" class="btn btn-primary">IR PARA O BLOG</a>
+            </div>
+        </div>
     </div>
 </section>

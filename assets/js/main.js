@@ -1,6 +1,14 @@
 jQuery(document).ready(function(){
 
     new WOW().init();
+
+    // Navbar 
+    jQuery('.mainNavbar__hamburguer').on('click', function(){
+        jQuery('.mainNavbar__nav--mobile').toggleClass('opened');
+    })
+    jQuery('.mainNavbar__nav--mobile li').on('click', function(){
+        jQuery('.mainNavbar__nav--mobile').toggleClass('opened');
+    })
     
     // Scroll to section
     jQuery('.scroll-to-section').on('click', function (e) {

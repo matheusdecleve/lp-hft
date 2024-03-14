@@ -17,6 +17,18 @@ function styleDefault() {
         .pipe(gulp.dest('assets/css/'))
         .pipe(browserSync.stream());
 }
+function styleDefaultMobile() {
+    return gulp.src([
+            'assets/scss/styles-mobile.scss',
+        ])
+        .pipe(sass().on('error', sass.logError))
+        .pipe(uglifycss({
+            "maxLineLean": 80,
+            "uglyComments": true
+        }))
+        .pipe(gulp.dest('assets/css/'))
+        .pipe(browserSync.stream());
+}
 
 function watch() {
     phpindex.server({
@@ -32,6 +44,9 @@ function watch() {
     gulp.watch([
         'assets/scss/*.scss',
     ], styleDefault);
+    gulp.watch([
+        'assets/scss/*.scss',
+    ], styleDefaultMobile);
     gulp.watch([
         '*.php',
         '*.html',

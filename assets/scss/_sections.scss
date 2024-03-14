@@ -58,25 +58,3 @@
         font-size: 1.2rem;
     }
 }
-
-@media screen and(max-width: 500px) { 
-    .section-default {
-        padding: 80px 0 40px;
-    }
-
-    
-    .section-header {
-        .one {
-            .box-padding {
-                &:last-child {                
-                    padding-bottom: 0;
-                }
-            }
-        }
-        .two {
-            .box-padding {
-                padding-top: 0;
-            }
-        }
-    }
-}
