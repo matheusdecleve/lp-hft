@@ -36,7 +36,7 @@ function watch() {
     }, function () {
         browserSync.init({
             proxy: {
-                target: "localhost/berti-telhados",
+                target: "localhost/lp-hft",
             }
         });
     })

@@ -77,26 +77,13 @@
 	function formatter(value, settings) {
 		return value.toFixed(settings.decimals);
 	}
-}(jQuery));
 
-jQuery(document).ready(function($){
-
-    $triggered_times = 0;
-
-    function count(options) {
+	function count(options) {
         var isso = jQuery(this);
         options = jQuery.extend({}, options || {}, isso.data('countToOptions') || {});
         isso.countTo(options);
     }
 
-    $(window).on('scroll', function() {
-            var y_scroll_pos = window.pageYOffset;
-            var scroll_pos_test = 4300;   // set to whatever you want it to be
+	jQuery('.timer').each(count); 
 
-            if(y_scroll_pos > scroll_pos_test && $triggered_times == 0 ) {
-                jQuery('.timer').each(count); 
-                $triggered_times = 1;   // to make sure the above action triggers only once
-            }
-    });
-
-})
+}(jQuery));

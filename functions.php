@@ -1,5 +1,5 @@
 <?php
-class Pizzani
+class Hft
 {
 	function activation()
 	{
@@ -22,15 +22,15 @@ class Pizzani
 
 		add_theme_support('post-thumbnails');
 
-		add_action('wp_enqueue_scripts', array('Pizzani', 'custom_scripts'));
+		add_action('wp_enqueue_scripts', array('Hft', 'custom_scripts'));
 
 		// add_filter('show_admin_bar', '__return_false');
-		add_filter('body_class', array('Pizzani', 'my_body_classes'));
-		add_filter('admin_footer_text', array('Pizzani', 'remove_footer_admin'));
-		add_filter('login_headerurl', array('Pizzani', 'my_login_logo_url'));
-		add_filter('login_headertext', array('Pizzani', 'my_login_logo_url_title'));
-		add_filter('excerpt_length', array('Pizzani', 'custom_excerpt_length'), 10);
-		add_filter('excerpt_more', array('Pizzani', 'custom_excerpt_more'), 10);
+		add_filter('body_class', array('Hft', 'my_body_classes'));
+		add_filter('admin_footer_text', array('Hft', 'remove_footer_admin'));
+		add_filter('login_headerurl', array('Hft', 'my_login_logo_url'));
+		add_filter('login_headertext', array('Hft', 'my_login_logo_url_title'));
+		add_filter('excerpt_length', array('Hft', 'custom_excerpt_length'), 10);
+		add_filter('excerpt_more', array('Hft', 'custom_excerpt_more'), 10);
 	}
 
 	static function custom_scripts()
@@ -145,7 +145,7 @@ class Pizzani
 
 	static function remove_footer_admin()
 	{
-		echo "Pizzani Marketing";
+		echo "HFTs";
 	}
 
 	static function my_login_logo_url()
@@ -181,11 +181,11 @@ if (function_exists('acf_add_options_page')) {
 	));
 }
 
-register_activation_hook(__FILE__, array('Pizzani', 'activation'));
-register_deactivation_hook(__FILE__, array('Pizzani', 'deactivation'));
+register_activation_hook(__FILE__, array('Hft', 'activation'));
+register_deactivation_hook(__FILE__, array('Hft', 'deactivation'));
 
-add_action('init', array('Pizzani', 'custom_cpts'));
-add_action('after_setup_theme', array('Pizzani', 'init'));
+// add_action('init', array('Hft', 'custom_cpts'));
+add_action('after_setup_theme', array('Hft', 'init'));
 
 define('SITE_URL', get_home_url() . '/');
 define('THEME_URL', get_bloginfo('template_url') . '/');

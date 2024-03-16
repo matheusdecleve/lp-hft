@@ -43,65 +43,7 @@
 
     <?php the_field('code_header','option'); ?>
 </head>
-
 <body>
-
-<div class="mainNavbar">
-    <div class="container">
-        <div class="mainNavbar__logo">
-            <a href="<?php bloginfo('url'); ?>">
-                <img src="<?php the_field('logo','option'); ?>" class="logo" alt="Logo <?php bloginfo('title'); ?>">
-            </a>
-        </div>
-        <div class="mainNavbar__nav--desktop">
-            <ul>
-                <?php if( have_rows('item_nav','option') ):
-                    while ( have_rows('item_nav','option') ) : the_row();       
-                        if(is_front_page()) { ?>
-                            <li>
-                                <?php if(get_sub_field('link_class')) { ?>
-                                    <a class="<?php the_sub_field('link_class'); ?>" href="<?php the_sub_field('link_link'); ?>"><?php the_sub_field('link_name'); ?></a>
-                                <?php } else { ?>
-                                    <a href="<?php bloginfo('url'); ?><?php the_sub_field('link_link'); ?>"><?php the_sub_field('link_name'); ?></a>
-                                <?php } ?>
-                            </li> 
-                        <?php } else { ?>
-                            <li>
-                                <a href="<?php bloginfo('url'); ?><?php the_sub_field('link_link'); ?>"><?php the_sub_field('link_name'); ?></a>
-                            </li> 
-                        <?php }
-                    endwhile; ?>
-                <?php endif; ?>  
-            </ul>
-        </div>
-        <div class="mainNavbar__hamburguer">
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-    </div>
-</div>
-
-<div class="mainNavbar__nav--mobile">
-    <ul>
-        <?php if( have_rows('item_nav','option') ):
-            while ( have_rows('item_nav','option') ) : the_row();       
-                if(is_front_page()) { ?>
-                    <li>
-                        <?php if(get_sub_field('link_class')) { ?>
-                            <a class="<?php the_sub_field('link_class'); ?>" href="<?php the_sub_field('link_link'); ?>"><?php the_sub_field('link_name'); ?></a>
-                        <?php } else { ?>
-                            <a href="<?php bloginfo('url'); ?><?php the_sub_field('link_link'); ?>"><?php the_sub_field('link_name'); ?></a>
-                        <?php } ?>
-                    </li> 
-                <?php } else { ?>
-                    <li>
-                        <a href="<?php bloginfo('url'); ?><?php the_sub_field('link_link'); ?>"><?php the_sub_field('link_name'); ?></a>
-                    </li> 
-                <?php }
-            endwhile; ?>
-        <?php endif; ?>  
-    </ul>
-</div>
 
 
     
