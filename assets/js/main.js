@@ -21,17 +21,59 @@ jQuery(document).ready(function(){
         });
     });
 
+    gsap.to(".circle1", {
+        duration:2.5,
+        ease: "none",
+        y: -250,
+        scrollTrigger: {
+            trigger: ".trigger-circle",
+            scrub: 1,
+        }, 
+    });
+    gsap.to(".circle2", {
+        duration:2.5,
+        ease: "none",
+        y: -80,
+        scrollTrigger: {
+            trigger: ".trigger-circle",
+            scrub: 1,
+        }, 
+    });
+    gsap.to(".circle3", {
+        duration:2.5,
+        ease: "none",
+        y: -350,
+        scrollTrigger: {
+            trigger: ".trigger-circle",
+            scrub: 1,
+        }, 
+    });
+    gsap.to(".circle4", {
+        duration:2.5,
+        ease: "none",
+        y: -60,
+        scrollTrigger: {
+            trigger: ".trigger-circle",
+            scrub: 1,
+        }, 
+    });
+
+
     // Header hero carousel
-    jQuery('.owl-header-hero').owlCarousel({
+    jQuery('.owl-for-who').owlCarousel({
         loop:false,
-        margin:0,
-        nav:true,
+        margin:16,
+        nav:false,
+        dots:true,
         responsive:{
             0:{
                 items:1
             },
-            1000:{
+            768:{
                 items:1
+            },
+            1000:{
+                items:2
             }
         }
     })
