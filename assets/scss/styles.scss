@@ -141,7 +141,7 @@ img {
 .logo {
     height: 80px;
     display: block;
-    margin: 0 auto 120px;
+    margin: 0 auto 100px;
     object-fit: contain
 }
 
@@ -150,7 +150,7 @@ img {
     padding: 20px 32px;
     @include border-radius;
     font-weight: bold;
-    background: var(--btn-bg) !important;
+    background: -webkit-linear-gradient(var(--primary-color), cyan);
     color: var(--btn-text) !important;
     text-transform: uppercase;
     letter-spacing: .05rem;
@@ -210,7 +210,7 @@ ul {
 }
 
 .gradient-text {
-    background: -webkit-linear-gradient(var(--primary-color), #fff);
+    background: -webkit-linear-gradient(var(--primary-color), cyan);
     font-weight: 600 !important;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -285,7 +285,7 @@ ul {
     width:60%;
     height:4px;
     border-radius:4px;
-    background:var(--primary-color);
+    background:#2e5c5c;
     margin: 8px 0;
     position:relative;
 
@@ -295,7 +295,7 @@ ul {
         border-top-left-radius:4px;
         border-bottom-left-radius:4px;
 
-        width:87%;
+        width:84%;
         height:4px;
         background:var(--primary-color);
     }

@@ -12,11 +12,12 @@
     z-index: 9;
     position: relative;
     background-color: $black-color;
-    background-image: url('../img/pattern2.png');
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: right;
+    // background-image: url('../img/pattern2.png');
+    // background-size: 50%;
+    // background-repeat: no-repeat;
+    // background-position: right;
     iframe {
+        margin-top: -80px;
         border: solid 1px var(--primary-color);
         @include border-radius;
     }
@@ -28,6 +29,9 @@
 }
 
 .for-who {
+    .col-md-4 {
+        padding-right: 28px;
+    }
     .owl-for-who {
         display: grid;
         .owl-item {
@@ -41,6 +45,7 @@
 
 
 .icon-circle {
+    max-width: 340px;
     position: absolute;
     z-index: 9;
     display: flex;
@@ -59,7 +64,6 @@
 
     b {
         font-size:.9rem;
-        line-height: 1rem;
         display: block;
         color: var(--primary-color);
     }
@@ -78,7 +82,7 @@
     }
     &.circle3 {
         right: 10vw;
-        bottom: 15vh;
+        bottom: 55vh;
     }
     &.circle4 {
         right: 15vw;

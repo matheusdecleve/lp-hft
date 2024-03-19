@@ -8,7 +8,7 @@
 
     .gradient-radial {
         position: absolute;
-        background: radial-gradient(circle, rgba(85,239,196,0.2) 0%, rgba(0,0,0,1) 38%, rgba(0,0,0,1) 100%);
+        background: radial-gradient(circle, rgba(0, 216, 216,.3) 0%, rgba(0,0,0,1) 40%, rgba(0,0,0,1) 100%);
         z-index: -1;
         top: -8vh;
         width: 100%;
@@ -23,8 +23,11 @@
 }
 
 .hand {
+    max-width: 35vw;
     position: absolute;
     left: 50%;
-    bottom: -10vh;
+    bottom: -20vh;
     transform: translateX(-50%);
 }
+
+

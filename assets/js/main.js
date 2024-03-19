@@ -21,6 +21,18 @@ jQuery(document).ready(function(){
         });
     });
 
+
+    gsap.to(".hand", {
+        duration:2.5,
+        ease: "none",
+        y: -170,
+        scrollTrigger: {
+            trigger: ".section-video",
+            scrub: 1,
+        }, 
+    });
+
+
     gsap.to(".circle1", {
         duration:2.5,
         ease: "none",
@@ -78,4 +90,3 @@ jQuery(document).ready(function(){
         }
     })
 });
-
