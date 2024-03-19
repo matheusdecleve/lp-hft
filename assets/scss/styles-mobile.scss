@@ -10,25 +10,44 @@
         line-height: 32px !important;
     }
     .subtitle {
-        font-size: 1rem;
+        font-size: .8rem;
     }
-
-    // Navbar
-    
 
     // Header Hero
     .header-hero {
         height: 80vh;
+        p {
+            max-width: 95%;
+        }
+        .gradient-radial {
+            background: radial-gradient(circle,rgba(0,216,216,0.3) 0,black 70%,black 100%);
+        }
     }
 
     // Sections
     .section-default {
         padding: 80px 0 40px;
+
+        .section-title {
+            margin: 0 auto 30px;
+        }
+    }
+
+    .section-video {
+        padding-bottom: 0 !important;
+
+        iframe {
+            height: 300px !important;
+        }
     }
 
     // Utils
+    .danilo {
+        margin-top: 0;
+    }
+    
     .box-padding, .box-padding-lg {
-        padding: 40px 0px;
+        padding: 42px 24px;
     }
 
     .no-padding {
@@ -57,6 +76,16 @@
 
     .icon-contato svg {
         width: 30px;
+    }
+
+    .row-grid {
+        &.two-columns {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .icon-circle {
+        display: none;
     }
 
     // Footer

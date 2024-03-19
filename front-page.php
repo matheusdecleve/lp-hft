@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-12 col-md-10 offset-md-1">
-                    <img src="<?php echo THEME_URL; ?>assets/img/logo.png" class="logo" alt="">
+                    <img src="<?php the_field('logo','option'); ?>" class="logo" alt="">
                     <div class="wow animate__animated animate__fadeIn">
                         <span class="subtitle">Mentoria HFT Trader</span>
                         <h1>Descubra o segredo dos HFTs e comece a <span class="gradient-text">lucrar no day trade</span></h1>
@@ -65,7 +65,7 @@
                 <div class="col-12 col-md-10 offset-md-1">
                     <div class="row-grid two-columns">
                         <div class="grid-gap wow animate__animated animate__fadeInLeft">
-                            <div class="box-padding box-border">
+                            <div class="box-padding box-border d-none d-md-block">
                                 <span class="subtitle">Vagas disponíveis somente para alunos</span>
                                 <h2>Cadastre-se<br/>para garantir<br />sua vaga</h2>
                             </div>                    
@@ -113,13 +113,13 @@
     <section class="section-default bg-black">
         <div class="container">
             <div class="row d-flex align-items-center">
-                <div class="col-12 col-md-4 offset-md-1">
-                    <div class="box-border border-radius box-shadow wow animate__animated animate__fadeInLeft">
+                <div class="col-12 col-md-4 offset-md-1 order-1">
+                    <div class="box-border border-radius box-shadow wow animate__animated animate__fadeInLeft mt-5 mt-lg-0">
                         <img src="<?php echo THEME_URL ?>assets/img/gifs/animation1.gif" class="w-100" alt="">
                         <div class="gradient-bottom"></div>
                     </div>
                 </div>
-                <div class="col-12 col-md-5 offset-md-1">
+                <div class="col-12 col-md-5 offset-md-1 order-0">
                     <span class="subtitle wow animate__animated animate__fadeIn animate__faster">Como funciona</span>
                     <h2 class="h1 text-white wow animate__animated animate__fadeIn animate__fast">A mentoria irá te transformar em um <span class="gradient-text">Broker de tesouraria</span></h2>
                     <p class="text-white lead my-3 wow animate__animated animate__fadeIn animate__slow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi cum pariatur iusto, dolores suscipit architecto, alias dolor, incidunt officiis in harum error magni rem reiciendis.</p>
@@ -183,7 +183,7 @@
     <section class="section-default for-who">
         <div class="container">
             <div class="row d-flex align-items-center">
-                <div class="col-12 col-md-4 offset-md-1 wow animate__animated animate__fadeInLeft">
+                <div class="col-12 col-md-4 offset-md-1 wow animate__animated animate__fadeInLeft mb-4 mb-lg-0">
                     <span class="subtitle">Pra quem é a mentoria?</span>
                     <h2 class="text-white">A <span class="gradient-text">mentoria HFT</span> é pra você que deseja evoluir</h2>
                 </div>
@@ -223,7 +223,7 @@
         <div class="container">
             <div class="row section-title">
                 <div class="col-12 col-md-5 offset-md-1">
-                    <img src="<?php echo THEME_URL ?>assets/img/danilo.png" style="margin-top:-200px" class="wow animate__animated animate__fadeInUp" alt="">
+                    <img src="<?php echo THEME_URL ?>assets/img/danilo.png" class="wow animate__animated animate__fadeInUp danilo" alt="">
                 </div>
                 <div class="col-12 col-md-4 offset-md-1">
                     <span class="subtitle wow animate__animated animate__fadeIn animate__faster">Mentor</span>

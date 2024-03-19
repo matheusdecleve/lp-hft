@@ -16,8 +16,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <link rel="shortcut icon" href="<?php echo THEME_URL; ?>assets/img/favicon.png" type="image/png" />
-    <link rel="apple-touch-icon" href="<?php echo THEME_URL; ?>assets/img/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="<?php the_field('favicon','option'); ?>" type="image/png" />
+    <link rel="apple-touch-icon" href="<?php the_field('apple_favicon','option'); ?>" />
 
     <meta name="description" content="<?php bloginfo('description'); ?>" />
     <meta property="og:locale" content="pt_BR" />
@@ -26,7 +26,7 @@
     <meta property="og:description" content="<?php bloginfo('description'); ?>" />
     <meta property="og:url" content="<?php bloginfo('url'); ?>" />
     <meta property="og:site_name" content="<?php bloginfo('title'); ?>" />
-    <meta property="og:image" content="<?php echo THEME_URL; ?>screenshot.png" />
+    <meta property="og:image" content="<?php the_field('screenshot','option'); ?>" />
     <meta property="og:image:width" content="600" />
     <meta property="og:image:height" content="315" />
     <meta property="og:image:type" content="image/png" />
