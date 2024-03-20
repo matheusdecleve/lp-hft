@@ -70,7 +70,7 @@
                                 <h2>Cadastre-se<br/>para garantir<br />sua vaga</h2>
                             </div>                    
                             <div class="box-padding box-border d-flex align-items-center">
-                                <div class="circle">
+                                <div class="circle floating">
                                     <img src="<?php echo THEME_URL; ?>assets/img/icons/emoji-fire2.png" alt="">
                                 </div>
                                 <div>
@@ -82,7 +82,7 @@
                         </div>
                         <div class="wow animate__animated animate__fadeInRight" id="cadastrese">
                             <form class="box-padding position-relative">    
-                                <p class="h4 fw-bold">Cadastre-se para garantir sua vaga</p>                    
+                                <p class="h4 fw-bold">Preencha o formulário<br />para se cadastrar</p>                    
                                 <div class="row">
                                     <div class="col-12">
                                         <label for="name">Nome completo</label>

@@ -362,6 +362,24 @@ label {
     margin-top:-200px
 }
 
+@keyframes float {
+    0% {
+        transform: translatey(0)
+    }
+
+    50% {
+        transform: translatey(-5px)
+    }
+
+    100% {
+        transform: translatey(0)
+    }
+}
+
+.floating {
+    animation: float 5s ease-in-out infinite;
+}
+
 @import 'header-hero';
 @import 'sections';
 @import 'footer';
