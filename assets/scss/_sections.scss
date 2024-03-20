@@ -12,10 +12,7 @@
     z-index: 9;
     position: relative;
     background-color: $black-color;
-    // background-image: url('../img/pattern2.png');
-    // background-size: 50%;
-    // background-repeat: no-repeat;
-    // background-position: right;
+    // padding-bottom: 200px;    
     iframe {
         margin-top: -80px;
         border: solid 1px var(--primary-color);
@@ -25,10 +22,51 @@
 
 .section-form {
     background-color: $black-color;
-    padding-top: 0;
+    // padding-top: 200px;
 }
 
-.for-who {
+.section-howitworks {
+    .howitworks-wrapper {
+        margin-top: 32px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        
+        .howitworks-item {
+            border: solid 1px var(--primary-color);
+            padding: 16px 32px;
+            @include border-radius;
+
+            b {
+                display: block;
+                color: var(--primary-color);
+                font-size:1rem
+            }
+            svg {
+                display: none;
+                margin: 0 0 16px 0;
+            }
+        }
+    }
+}
+
+.section-testimonials {
+    iframe {
+        @include border-radius;
+        border: solid 1px var(--primary-color);
+    }
+
+    .gradient-radial {
+        position: absolute;
+        background: radial-gradient(circle, rgba(0, 216, 216,.3) 0%, rgba(0,0,0,.4) 40%, rgba(0,0,0,.4) 100%);
+        z-index: -1;
+        top: -8vh;
+        width: 100%;
+        height: calc(100% + 8vh);
+    }
+}
+
+.section-forwho {
     .col-md-4 {
         padding-right: 28px;
     }
@@ -43,6 +81,25 @@
     }
 }
 
+.section-faq {
+    .accordion-item {
+        background: transparent;
+        border: 0;
+    }
+    .accordion-button {
+        color: var(--primary-color);
+        padding: 0;
+        font-weight: bold;
+        background-color: transparent;
+    }
+    .accordion-body {
+        padding: 16px 0;
+        color: #fff;
+    }
+    .accordion-button:not(.collapsed)::after {
+        
+    }
+}
 
 .icon-circle {
     max-width: 340px;

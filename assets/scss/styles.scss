@@ -103,6 +103,11 @@ img {
     max-width:100%;
 }
 
+svg {
+    fill: var(--primary-color);
+    margin-right: 4px;
+}
+
 .text-primary {
     color: var(--primary-color) !important;
 }
@@ -169,6 +174,20 @@ img {
         &:hover {
             box-shadow: 0 0 20px $black-color;
         }
+    }
+
+    &.outline {
+        background:transparent;
+        border: solid 1px var(--primary-color);
+    }
+
+    &.underline {
+        background: transparent;
+        border: 0;
+        padding: 0;
+        text-decoration: underline;
+        color: var(--primary-color) !important;
+        box-shadow: none;
     }
 }
 
@@ -368,7 +387,7 @@ label {
     }
 
     50% {
-        transform: translatey(-5px)
+        transform: translatey(-10px)
     }
 
     100% {
@@ -378,6 +397,16 @@ label {
 
 .floating {
     animation: float 5s ease-in-out infinite;
+}
+
+.hand {
+    display: block;
+    max-width: 30vw;
+    margin: 0 auto -35vh;
+}
+
+.fwb {
+    font-weight: bold !important;
 }
 
 @import 'header-hero';

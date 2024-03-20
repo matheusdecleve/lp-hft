@@ -21,18 +21,6 @@ jQuery(document).ready(function(){
         });
     });
 
-
-    gsap.to(".hand", {
-        duration:2.5,
-        ease: "none",
-        y: -170,
-        scrollTrigger: {
-            trigger: ".section-video",
-            scrub: 1,
-        }, 
-    });
-
-
     gsap.to(".circle1", {
         duration:2.5,
         ease: "none",
@@ -73,6 +61,25 @@ jQuery(document).ready(function(){
 
     // Header hero carousel
     jQuery('.owl-for-who').owlCarousel({
+        loop:false,
+        margin:16,
+        nav:false,
+        dots:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            768:{
+                items:1
+            },
+            1000:{
+                items:2
+            }
+        }
+    })
+
+    // Testimonials carousel
+    jQuery('.owl-testimonials').owlCarousel({
         loop:false,
         margin:16,
         nav:false,
