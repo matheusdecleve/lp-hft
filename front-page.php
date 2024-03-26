@@ -22,7 +22,7 @@
     </section>
 
 <!-- Video section -->
-    <section class="section-default section-video trigger-circle">
+    <section class="section-default section-video trigger-circle pb-0">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-10 offset-md-1">
@@ -57,7 +57,7 @@
     </section>
 
 <!-- Form section -->
-    <section class="section-default section-form">
+    <section class="section-default section-form first-form">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-10 offset-md-1">
@@ -67,7 +67,7 @@
                                 <span class="subtitle">Cadastre-se agora</span>
                                 <h2 class="text-white">Está pronto para mudar toda sua <span class="gradient-text">vida financeira</span>?</h2>
                             </div>                    
-                            <div class="box-padding box-border d-flex align-items-center">
+                            <div class="box-padding box-border d-flex align-items-center box-shadow">
                                 <div class="circle floating">
                                     <img src="<?php echo THEME_URL; ?>assets/img/icons/emoji-fire2.png" alt="Ilustração Emoji" loading="lazy">
                                 </div>
@@ -147,42 +147,6 @@
         </div>
     </section>
 
-<!-- Testimonials section-->
-    <section class="section-default section-testimonials">
-        <div class="container">
-            <div class="row section-title wow animate__animated animate__fadeIn">
-                <div class="col-12 col-md-8 offset-md-2 text-center">
-                    <span class="subtitle">Depoimentos</span>
-                    <h2 class="text-white">Faça como mais de <span class="gradient-text">1500</span> alunos e mude sua vida financeira</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-10 offset-md-1">
-                    <div class="owl-carousel owl-theme owl-testimonials">
-                        <div class="item">
-                            <div class="testimonial-item-header"></div>
-                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/BDFGYkPcBRE?si=1XXZVKdeMR903l9m&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                        <div class="item">
-                            <div class="testimonial-item-header"></div>
-                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/PPadFsOnZ3Y?si=ayfOSX3Z9A_e1tYa&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                        <div class="item">
-                            <div class="testimonial-item-header"></div>
-                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/VS1GcQXLV7M?si=YC-q8SM6FHyZGT6f&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div> 
-                    </div>
-                </div>
-                <div class="col-12 text-center d-none d-md-block">
-                    <a href="#cadastrese2" class="btn btn-primary scroll-to-section wow animate__animated animate__fadeIn mt-5">
-                        GARANTA SUA VAGA AGORA                        
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="gradient-radial"></div>  
-    </section>
-
 <!-- For who section -->
     <section class="section-default section-forwho">
         <div class="gradient-top2"></div> 
@@ -222,7 +186,43 @@
                 </div>
             </div>
         </div>
-        <div class="gradient-bottom"></div> 
+        <div class="gradient-radial"></div>  
+    </section>
+
+<!-- Testimonials section-->
+    <section class="section-default section-testimonials">
+        <div class="container">
+            <div class="row section-title wow animate__animated animate__fadeIn">
+                <div class="col-12 col-md-8 offset-md-2 text-center">
+                    <span class="subtitle">Depoimentos</span>
+                    <h2 class="text-white">Faça como mais de <span class="gradient-text">1500</span> alunos e mude sua vida financeira</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1">
+                    <div class="owl-carousel owl-theme owl-testimonials">
+                        <div class="item">
+                            <div class="testimonial-item-header"></div>
+                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/BDFGYkPcBRE?si=1XXZVKdeMR903l9m&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-item-header"></div>
+                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/PPadFsOnZ3Y?si=ayfOSX3Z9A_e1tYa&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-item-header"></div>
+                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/VS1GcQXLV7M?si=YC-q8SM6FHyZGT6f&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-12 text-center d-none d-md-block">
+                    <a href="#cadastrese2" class="btn btn-primary scroll-to-section wow animate__animated animate__fadeIn mt-5">
+                        GARANTA SUA VAGA AGORA                        
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="gradient-bottom"></div>   
     </section>
 
 <!-- Teacher section -->
@@ -308,8 +308,17 @@
         <div class="gradient-top"></div> 
     </section>
 
+<!-- Price section -->  
+    <!-- <section class="section-default section-price">
+        <div class="container">
+            <div class="row">
+                <div class="col-12"></div>
+            </div>
+        </div>
+    </section> -->
+
 <!-- Form section 2 -->
-    <section class="section-default section-form">
+    <section class="section-default section-form bg-form">
         <div class="container">
             <div class="row d-flex align-items-center">
                 <div class="col-12 col-md-4 offset-md-1 wow animate__animated animate__fadeIn mb-4 mb-lg-0">

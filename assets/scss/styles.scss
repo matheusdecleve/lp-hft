@@ -22,6 +22,9 @@ $secondary-font: "Poppins", sans-serif;
 .box-shadow {
     @include box-shadow;
 }
+.box-shadow {
+    @include box-shadow;
+}
 .border-radius {
     @include border-radius;
 }
@@ -352,7 +355,6 @@ ul {
 form {
     height: 100%;
     @include border-radius;
-    @include box-shadow;
     background:rgba(8,58,51,0.4);   
 
     p.h4 {
