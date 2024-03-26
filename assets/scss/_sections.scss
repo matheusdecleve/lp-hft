@@ -22,10 +22,12 @@
 
 .section-form {
     background-color: $black-color;
-    // padding-top: 200px;
 }
 
 .section-howitworks {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../img/bg-robo-min.png');
     .howitworks-wrapper {
         margin-top: 32px;
         display: grid;
@@ -67,6 +69,9 @@
 }
 
 .section-forwho {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../img/bg-robo2-min.png');
     .col-md-4 {
         padding-right: 28px;
     }
@@ -75,15 +80,27 @@
         .owl-item {
             .box-padding-sm {
                 min-height:380px;
+                background:#111
             }
         } 
     }
 }
 
+.section-teacher {
+    background-color:#000;
+    padding-bottom: 20px;
+}
+
 .section-faq {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../img/bg-robo-min.png');
     #accordion{
         margin: 0px;
-        padding: 0px;
+        padding: 32px;
+        background-color: #1b1b1b;
+        @include border-radius;
+        @include box-shadow;
     }
     #accordion a.openText {
         margin: 0px;
@@ -103,7 +120,7 @@
             top:50%;
             font-size:2rem;
             transform: translateY(-50%);
-        }
+        }        
     }
     #accordion li:before {
         display: none;
@@ -123,6 +140,9 @@
     #accordion li div.openContent.visible{
         display: inherit;
     }
+}
+.no-border {
+    border: 0 !important;
 }
 
 .icon-circle {

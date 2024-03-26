@@ -1,9 +1,13 @@
 .header-hero {
     width: 100vw;
+    min-height:85vh;
     padding: 8vh 0;
     position: relative;
     display: flex;
     justify-content: center;    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../img/bg-robo2-min.png');
  
     p {
         max-width: 55%;

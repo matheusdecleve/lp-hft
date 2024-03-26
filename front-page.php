@@ -5,7 +5,7 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-12 col-md-10 offset-md-1">
-                    <img src="<?php the_field('logo','option'); ?>" class="logo" alt="">
+                    <img src="<?php the_field('logo','option'); ?>" class="logo" alt="Logo HFTS" loading="lazy">
                     <div class="wow animate__animated animate__fadeIn">
                         <span class="subtitle">Mentoria HFT Trader</span>
                         <h1>Descubra o segredo dos HFTs e comece a <span class="gradient-text fwb">lucrar no day trade</span></h1>
@@ -17,7 +17,8 @@
                 </div>
             </div>
         </div>
-        <div class="gradient-radial"></div>         
+        <div class="gradient-radial"></div>    
+        <div class="gradient-bottom"></div>     
     </section>
 
 <!-- Video section -->
@@ -52,7 +53,7 @@
                 <span>Ex-Broker de tesouraria com 14 anos de experiência</span>
             </div>
         </div>
-        <!-- <img src="<?php echo THEME_URL ?>assets/img/hand.png" class="hand floating" alt=""> -->
+        <!-- <img src="<?php echo THEME_URL ?>assets/img/hand.png" class="hand floating" alt="" loading="lazy"> -->
     </section>
 
 <!-- Form section -->
@@ -68,7 +69,7 @@
                             </div>                    
                             <div class="box-padding box-border d-flex align-items-center">
                                 <div class="circle floating">
-                                    <img src="<?php echo THEME_URL; ?>assets/img/icons/emoji-fire2.png" alt="">
+                                    <img src="<?php echo THEME_URL; ?>assets/img/icons/emoji-fire2.png" alt="Ilustração Emoji" loading="lazy">
                                 </div>
                                 <div>
                                     <b class="d-block mb-3 text-white">Vagas limitadas</b>                                
@@ -104,16 +105,17 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> 
     </section>
 
 <!-- How it works section - GIF -->
     <section class="section-default bg-black section-howitworks">
+        <div class="gradient-top"></div> 
         <div class="container">
             <div class="row d-flex align-items-center">
                 <div class="col-12 col-md-4 offset-md-1 order-1">
                     <div class="box-border border-radius box-shadow wow animate__animated animate__fadeInLeft mt-5 mt-lg-0">
-                        <img src="<?php echo THEME_URL ?>assets/img/gifs/animation1.gif" class="w-100" alt="">
+                        <img src="<?php echo THEME_URL ?>assets/img/gifs/animation1.gif" class="w-100" alt="Animação Danilo palestrando" loading="lazy">
                         <div class="gradient-bottom"></div>
                     </div>
                 </div>
@@ -183,6 +185,7 @@
 
 <!-- For who section -->
     <section class="section-default section-forwho">
+        <div class="gradient-top2"></div> 
         <div class="container">
             <div class="row d-flex align-items-center">
                 <div class="col-12 col-md-4 offset-md-1 wow animate__animated animate__fadeInLeft mb-4 mb-lg-0">
@@ -219,52 +222,15 @@
                 </div>
             </div>
         </div>
-    </section>
-
-<!-- Form section 2 -->
-    <section class="section-default section-form">
-        <div class="container">
-            <div class="row d-flex align-items-center">
-                <div class="col-12 col-md-4 offset-md-1 wow animate__animated animate__fadeIn mb-4 mb-lg-0">
-                    <span class="subtitle">Cadastre-se agora</span>
-                    <h2 class="text-white">Está pronto para mudar toda sua <span class="gradient-text">vida financeira</span>?</h2>                    
-                </div>
-                <div class="col-12 col-md-5 offset-md-1">                    
-                    <div class="wow animate__animated animate__fadeInRight" id="cadastrese2">
-                        <form class="box-padding position-relative">    
-                            <p class="h4 fw-bold">Preencha o formulário<br />para se cadastrar</p>                    
-                            <div class="row">
-                                <div class="col-12">
-                                    <label for="name">Nome completo</label>
-                                    <input type="text" name="name" placeholder="Digite seu nome completo">
-                                </div>
-                                <div class="col-12">
-                                    <label for="email">E-mail</label>
-                                    <input type="text" name="email" placeholder="Digite seu melhor e-mail">
-                                </div>
-                                <div class="col-12">
-                                    <label for="phone">Telefone/Celular</label>
-                                    <input type="text" name="phone" placeholder="Digite seu número para contato">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <input type="submit" class="btn btn-primary" value="GARANTIR MINHA VAGA">
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class="gradient-bottom"></div> 
     </section>
 
 <!-- Teacher section -->
-    <section class="section-default bg-black">
+    <section class="section-default section-teacher">
         <div class="container">
             <div class="row section-title">
                 <div class="col-12 col-md-5 offset-md-1">
-                    <img src="<?php echo THEME_URL ?>assets/img/danilo.png" class="wow animate__animated animate__fadeInUp danilo" alt="">
+                    <img src="<?php echo THEME_URL ?>assets/img/danilo.png" class="wow animate__animated animate__fadeInUp danilo" alt="Foto do Danilo Dias" loading="lazy">
                 </div>
                 <div class="col-12 col-md-4 offset-md-1">
                     <span class="subtitle wow animate__animated animate__fadeIn animate__faster">Mentor</span>
@@ -324,31 +290,61 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="#!" class="openText" id="btn5">Como posso me inscrever?</a>
+                                <a href="#!" class="openText no-border" id="btn5">Como posso me inscrever?</a>
                                 <div class="openContent openContentbtn5 invisible">
                                     <p>Para se inscrever na mentoria, basta preencher o <a href="#cadastrese2">formulário</a> de inscrição nessa mesma página e seguir as instruções fornecidas. Após a inscrição, entraremos em contato para fornecer mais detalhes sobre o processo de pagamento e os próximos passos.</p>
                                 </div>
                             </li>
                         </ul>
                     </div>
-                </div>                
+                </div>       
+                <div class="col-12 text-center d-none d-md-block">
+                    <a href="#cadastrese2" class="btn btn-primary scroll-to-section wow animate__animated animate__fadeIn mt-5">
+                        GARANTA SUA VAGA AGORA                        
+                    </a>
+                </div>         
+            </div>
+        </div>
+        <div class="gradient-top"></div> 
+    </section>
+
+<!-- Form section 2 -->
+    <section class="section-default section-form">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-12 col-md-4 offset-md-1 wow animate__animated animate__fadeIn mb-4 mb-lg-0">
+                    <span class="subtitle">Cadastre-se agora</span>
+                    <h2 class="text-white">Está pronto para mudar toda sua <span class="gradient-text">vida financeira</span>?</h2>                    
+                </div>
+                <div class="col-12 col-md-5 offset-md-1">                    
+                    <div class="wow animate__animated animate__fadeInRight" id="cadastrese2">
+                        <form class="box-padding position-relative">    
+                            <p class="h4 fw-bold">Preencha o formulário<br />para se cadastrar</p>                    
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="name">Nome completo</label>
+                                    <input type="text" name="name" placeholder="Digite seu nome completo">
+                                </div>
+                                <div class="col-12">
+                                    <label for="email">E-mail</label>
+                                    <input type="text" name="email" placeholder="Digite seu melhor e-mail">
+                                </div>
+                                <div class="col-12">
+                                    <label for="phone">Telefone/Celular</label>
+                                    <input type="text" name="phone" placeholder="Digite seu número para contato">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <input type="submit" class="btn btn-primary" value="GARANTIR MINHA VAGA">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
 <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <img src="<?php echo THEME_URL ?>assets/img/logo.png" width="280" alt="">
-                    <small class="d-block mt-4"><?php echo Date('Y'); ?> Danilo Broker - Todos os direitos reservados.</small>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>  
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
-
 <?php get_footer(); ?>

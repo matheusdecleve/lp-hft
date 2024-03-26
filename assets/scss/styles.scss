@@ -221,9 +221,28 @@ ul {
 .gradient-bottom {
     background-image: linear-gradient(to bottom, transparent, black);
     width: 100vw;
-    height: 30px;
+    height: 100px;
     position: absolute;
     bottom: 0;
+    left: 0;
+    z-index: 9;
+}
+
+.gradient-top {
+    background-image: linear-gradient(to top, transparent, black);
+    width: 100vw;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+.gradient-top2 {
+    background-image: linear-gradient(to top, transparent, #0a0a0a);
+    width: 100vw;
+    height: 100px;
+    position: absolute;
+    top: 0;
     left: 0;
     z-index: 9;
 }
@@ -391,7 +410,9 @@ label {
 }
 
 .danilo {
-    margin-top:-200px
+    margin-top:-200px;
+    z-index:9;
+    position:relative;
 }
 
 @keyframes float {
