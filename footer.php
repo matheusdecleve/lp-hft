@@ -13,9 +13,9 @@
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
 
     <?php if(get_field('link_wpp','option')) : ?>
-        <!-- <a href="<?php the_field('link_wpp','option'); ?>" target="_blank" class="whatsapp-btn">
+         <a href="<?php the_field('link_wpp','option'); ?>" target="_blank" class="whatsapp-btn">
             <img src="<?php the_field('img_wpp','option'); ?>" alt="Entre em contato" loading="lazy">
-        </a> -->
+        </a>
     <?php endif; ?>
 
     <?php the_field('code_footer','option'); ?>
