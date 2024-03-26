@@ -235,6 +235,16 @@ ul {
     -webkit-text-fill-color: transparent;
 }
 
+.gradient-radial {
+    position: absolute;
+    background: radial-gradient(circle, rgba(0, 216, 216,.3) 0%, rgba(0,0,0,1) 35%, rgba(0,0,0,1) 100%);
+    z-index: -1;
+    top: -8vh;
+    width: 100%;
+    height: calc(100% + 8vh);
+}
+
+
 .circle {
     $size: 100px;
     min-width: $size;
@@ -376,6 +386,9 @@ label {
 .owl-theme .owl-nav.disabled+.owl-dots {
     margin-top: 24px !important;
 }
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background:var(--primary-color)
+}
 
 .danilo {
     margin-top:-200px
@@ -408,6 +421,7 @@ label {
 .fwb {
     font-weight: bold !important;
 }
+
 
 @import 'header-hero';
 @import 'sections';

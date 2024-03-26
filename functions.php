@@ -35,7 +35,7 @@ class Hft
 
 	static function custom_scripts()
 	{
-		wp_register_style('bootstrap', THEME_URL . 'assets/css/bootstrap.css', null, null, 'all');
+		wp_register_style('bootstrap', THEME_URL . 'assets/css/bootstrap.min.css', null, null, 'all');
 		wp_register_style('owlcarousel', THEME_URL . 'assets/css/owlcarousel/owl.carousel.min.css', null, null, 'all');
 		wp_register_style('owlcarouseltheme', THEME_URL . 'assets/css/owlcarousel/owl.theme.default.min.css', null, null, 'all');
 		wp_register_style('styles', THEME_URL . 'assets/css/styles.css', null, null, 'all');		

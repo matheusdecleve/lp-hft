@@ -67,10 +67,10 @@ jQuery(document).ready(function(){
         dots:true,
         responsive:{
             0:{
-                items:1
+                items:2
             },
             768:{
-                items:1
+                items:2
             },
             1000:{
                 items:2
@@ -95,5 +95,18 @@ jQuery(document).ready(function(){
                 items:2
             }
         }
+    })
+
+    // FAQ Carousel
+    jQuery('.openText').on('click', function(){
+        jQuery('.openContent').addClass('invisible')
+        jQuery('.openContent').removeClass('visible')
+        jQuery('.openContent').prev('a').removeClass('text-primary')
+
+        let thisId = jQuery(this).attr('id')
+        
+        jQuery('.openContent' + thisId).removeClass('invisible')
+        jQuery('.openContent' + thisId).addClass('visible')
+        jQuery('.openContent' + thisId).prev('a').addClass('text-primary')
     })
 });

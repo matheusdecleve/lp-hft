@@ -41,6 +41,34 @@
         }
     }
 
+    .section-forwho  {
+        svg {
+            max-width: 50px;
+        }
+        .owl-for-who {
+            display: grid;
+            .owl-item {
+                .box-padding-sm {
+                    padding: 16px;
+                    font-size: .9rem;
+                    min-height:350px
+                }
+            } 
+        }
+    }
+
+    .section-howitworks .howitworks-wrapper .howitworks-item {
+        padding: 16px;
+        b {
+            font-size:.8rem;
+
+        }
+    }
+
+    .section-faq #accordion a.openText {
+        padding-right: 40px;
+    }
+
     // Utils
     .danilo {
         margin-top: 0;
@@ -70,10 +98,6 @@
         }
     }
 
-    iframe {
-        margin-bottom: 32px;
-    }
-
     .icon-contato svg {
         width: 30px;
     }
@@ -87,6 +111,14 @@
     .icon-circle {
         display: none;
     }
+
+    .owl-theme .owl-nav.disabled+.owl-dots {
+        margin-top: 0 !important;
+    }
+    .owl-theme .owl-nav.disabled+.owl-dots {
+        margin-top: 24px !important;
+    }
+
 
     // Footer
     footer.footer {

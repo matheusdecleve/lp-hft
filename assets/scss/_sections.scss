@@ -76,28 +76,52 @@
             .box-padding-sm {
                 min-height:380px;
             }
-        }
-        
+        } 
     }
 }
 
 .section-faq {
-    .accordion-item {
-        background: transparent;
-        border: 0;
+    #accordion{
+        margin: 0px;
+        padding: 0px;
     }
-    .accordion-button {
-        color: var(--primary-color);
-        padding: 0;
-        font-weight: bold;
-        background-color: transparent;
-    }
-    .accordion-body {
-        padding: 16px 0;
+    #accordion a.openText {
+        margin: 0px;
+        padding: 10px;
+        display: block;
+        padding: 24px 0;
         color: #fff;
+        border-bottom: solid 1px rgba(0, 216, 216,.3);
+        font-weight: bold;
+        position:relative;
+
+        &:after {
+            content:'+';
+            display: block;
+            position:absolute;
+            right:8px;
+            top:50%;
+            font-size:2rem;
+            transform: translateY(-50%);
+        }
     }
-    .accordion-button:not(.collapsed)::after {
-        
+    #accordion li:before {
+        display: none;
+    }
+    #accordion li div.openContent{        
+        padding: 16px;
+        @include transition;
+        color: #fff;
+        border: solid 1px var(--primary-color);
+        background: rgba(8, 58, 51, .3);    
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+    }
+    #accordion li div.openContent.invisible {
+        display: none;
+    }
+    #accordion li div.openContent.visible{
+        display: inherit;
     }
 }
 
