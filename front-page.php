@@ -3,17 +3,24 @@
 <!-- Header Hero -->
     <section class="header-hero">
         <div class="container">
-            <div class="row text-center">
-                <div class="col-12 col-md-10 offset-md-1">
+            <div class="row">
+                <div class="col-12">
                     <img src="<?php the_field('logo','option'); ?>" class="logo" alt="Logo HFTS" loading="lazy">
+                </div>
+            </div>
+            <div class="row d-flex align-items-center">
+                <div class="col-12 col-md-7">                    
                     <div class="wow animate__animated animate__fadeIn">
-                        <span class="subtitle">Mentoria HFT Trader</span>
-                        <h1>Descubra o segredo dos HFTs e comece a <span class="gradient-text fwb">lucrar no day trade</span></h1>
+                        <!-- <span class="subtitle">Mentoria HFT Trader</span> -->
+                        <h1 class="display-3">Descubra o segredo dos HFTs e comece a <span class="gradient-text fwb">lucrar no day trade</span></h1>
                         <p class="lead">Aprenda estratégias avançadas e algorítmos poderosos para lucrar em frações de segundo.</p>
                     </div>
                     <a href="#cadastrese" class="btn btn-primary scroll-to-section wow animate__animated animate__fadeIn animate__slow">
                         GARANTA SUA VAGA AGORA                        
                     </a>
+                </div>
+                <div class="col-12 col-md-5">
+                    <img src="<?php echo THEME_URL ?>assets/img/robo.png" alt="">
                 </div>
             </div>
         </div>
@@ -33,23 +40,23 @@
 
         <div class="icon-circle circle1">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#00d8d8" class="bi bi-award" viewBox="0 0 16 16"><path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z"/><path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/></svg>
-            <b class="gradient-text">100% Presencial</b>
+            <b>100% Presencial</b>
         </div>
         <div class="icon-circle circle2">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#00d8d8" class="bi bi-trophy" viewBox="0 0 16 16"><path d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5q0 .807-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33 33 0 0 1 2.5.5m.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935m10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935M3.504 1q.01.775.056 1.469c.13 2.028.457 3.546.87 4.667C5.294 9.48 6.484 10 7 10a.5.5 0 0 1 .5.5v2.61a1 1 0 0 1-.757.97l-1.426.356a.5.5 0 0 0-.179.085L4.5 15h7l-.638-.479a.5.5 0 0 0-.18-.085l-1.425-.356a1 1 0 0 1-.757-.97V10.5A.5.5 0 0 1 9 10c.516 0 1.706-.52 2.57-2.864.413-1.12.74-2.64.87-4.667q.045-.694.056-1.469z"/></svg>
             <div>
-                <b class="gradient-text">Mude de vida</b>
+                <b>Mude de vida</b>
                 <span>Transforme sua vida financeira com a mentoria HFT</span>
             </div>
         </div>
         <div class="icon-circle circle3">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#00d8d8" class="bi bi-graph-up-arrow" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"/></svg>
-            <b class="gradient-text">Seja um Broker<br />de sucesso</b>
+            <b>Seja um Broker<br />de sucesso</b>
         </div>
         <div class="icon-circle circle4">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#00d8d8" class="bi bi-person-raised-hand" viewBox="0 0 16 16"><path d="M6 6.207v9.043a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H6.236a1 1 0 0 1-.447-.106l-.33-.165A.83.83 0 0 1 5 2.488V.75a.75.75 0 0 0-1.5 0v2.083c0 .715.404 1.37 1.044 1.689L5.5 5c.32.32.5.754.5 1.207"/><path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg>
             <div>
-                <b class="gradient-text">Danilo Dias</b>
+                <b>Danilo Dias</b>
                 <span>Ex-Broker de tesouraria com 14 anos de experiência</span>
             </div>
         </div>
@@ -65,7 +72,7 @@
                         <div class="grid-gap wow animate__animated animate__fadeInLeft">
                             <div class="box-padding box-border d-none d-md-block">
                                 <span class="subtitle">Cadastre-se agora</span>
-                                <h2 class="text-white">Está pronto para mudar toda sua <span class="gradient-text">vida financeira</span>?</h2>
+                                <h2 class="text-white">Está pronto para mudar toda sua vida financeira?</h2>
                             </div>                    
                             <div class="box-padding box-border d-flex align-items-center box-shadow">
                                 <div class="circle floating">

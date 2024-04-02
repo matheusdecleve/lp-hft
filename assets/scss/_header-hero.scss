@@ -1,17 +1,17 @@
 .header-hero {
     width: 100vw;
-    min-height:85vh;
-    padding: 8vh 0;
-    position: relative;
-    display: flex;
-    justify-content: center;    
+    min-height:80vh;
+    padding: 4vh 0;
+    position: relative;   
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('../img/bg-robo2-min.png');
+    background-image: url('../img/bg-matrix.png');
  
     p {
-        max-width: 55%;
         margin: 0 auto 32px;
-        color: #ccc;
+        color: #fff;
     }
+    // a {
+    //     margin-left: 15%;
+    // }
 }

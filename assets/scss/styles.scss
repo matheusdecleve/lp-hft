@@ -7,8 +7,8 @@ $light-color: rgb(161, 161, 161);
 $cyan: #00d8d8;
 $green: #62e18b;
 
-$primary-font: "Poppins", sans-serif;
-$secondary-font: "Poppins", sans-serif;
+$primary-font: "Quantico", sans-serif;
+$secondary-font: "Quantico", sans-serif;
 
 @mixin transition {
     transition: .2s
@@ -60,7 +60,7 @@ body{
 
 h1,h2,h3,h4,h5,h6 {
     pointer-events: none;
-    font-weight: 600 !important;
+    font-weight: 400 !important;
     font-family: $secondary-font;
     margin-bottom: 16px;
     color: $white-color;
@@ -147,9 +147,8 @@ svg {
 
 
 .logo {
-    height: 80px;
+    height: 100px;
     display: block;
-    margin: 0 auto 100px;
     object-fit: contain
 }
 
@@ -251,7 +250,7 @@ ul {
 }
 
 .gradient-text {
-    background: -webkit-linear-gradient(var(--primary-color), cyan);
+    background: -webkit-linear-gradient(var(--secondary-color), yellow);
     font-weight: 600 !important;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

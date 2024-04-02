@@ -14,7 +14,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="shortcut icon" href="<?php the_field('favicon','option'); ?>" type="image/png" />
     <link rel="apple-touch-icon" href="<?php the_field('apple_favicon','option'); ?>" />
@@ -36,6 +36,7 @@
     <style>
         :root {
             --primary-color: <?php the_field('primary_color','option'); ?>;
+            --secondary-color: <?php the_field('secondary_color','option'); ?>;
             --btn-bg: <?php the_field('btn_bg','option'); ?>;
             --btn-text: <?php the_field('btn_text','option'); ?>;
         }
