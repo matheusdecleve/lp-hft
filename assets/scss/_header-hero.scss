@@ -1,17 +1,51 @@
 .header-hero {
     width: 100vw;
-    min-height:80vh;
-    padding: 4vh 0;
+    padding: 5vh 0 10vh;
     position: relative;   
-    background-size: cover;
+   
+    background-size: 150%;  
     background-repeat: no-repeat;
-    background-image: url('../img/bg-matrix.png');
+    background-image: url('../img/bg-robo2.png');
+
+    .container {
+        position: relative;
+        z-index: 99;
+    }
+
+    .machine, .machine2 {
+        position: absolute;
+        right: 0;
+        bottom: -40vh;
+        width: 40vw;
+        -webkit-animation:spin 100s linear infinite;
+        -moz-animation:spin 100s linear infinite;
+        animation:spin 100s linear infinite;
+    }
+    .machine2 {
+        -webkit-animation:spin 20s linear infinite;
+        -moz-animation:spin 20s linear infinite;
+        animation:spin 20s linear infinite;
+    }
+
+    h1 {
+        line-height: 1;
+    }
  
     p {
-        margin: 0 auto 32px;
-        color: #fff;
+        margin: 0 0 32px;
+        max-width: 80%;
     }
-    // a {
-    //     margin-left: 15%;
-    // }
+}
+
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
 }

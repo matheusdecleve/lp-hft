@@ -14,7 +14,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Tomorrow:wght@400;600&display=swap" rel="stylesheet">
+
 
     <link rel="shortcut icon" href="<?php the_field('favicon','option'); ?>" type="image/png" />
     <link rel="apple-touch-icon" href="<?php the_field('apple_favicon','option'); ?>" />
@@ -46,5 +48,8 @@
 </head>
 <body>
 
+<div id="bg-noise"></div>
+<canvas id="matrix"></canvas>
+<div class="gradient-radial"></div>
 
     

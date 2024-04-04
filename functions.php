@@ -56,6 +56,7 @@ class Hft
 		wp_register_script('owl', THEME_URL . 'assets/js/owl.carousel.min.js', array(), '0.1', true);
 		wp_register_script('wow', THEME_URL . 'assets/js/wow.min.js',null, null, 'all');
 		wp_register_script('main', THEME_URL . 'assets/js/main.js',null, null, 'all');
+		wp_register_script('matrix', THEME_URL . 'assets/js/matrix.js',null, null, 'all');
 		// wp_register_script('counter', THEME_URL . 'assets/js/counter.js',null, null, 'all');
 
 		// wp_enqueue_script('bootstrapbundle');
@@ -65,6 +66,7 @@ class Hft
 		wp_enqueue_script('owl');
 		wp_enqueue_script('wow');
 		wp_enqueue_script('main');
+		wp_enqueue_script('matrix');
 		// wp_enqueue_script('counter');
 		
 		wp_localize_script('functions', 'ajax_object', array('ajax_url' => admin_url('admin-ajax.php')));		
