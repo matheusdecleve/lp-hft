@@ -1,4 +1,4 @@
-    <!-- <footer class="footer bg-dark">
+    <footer class="footer bg-black">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
@@ -7,7 +7,7 @@
                 </div>
             </div>
         </div>
-    </footer> -->
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>  
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>

@@ -41,6 +41,7 @@
             --secondary-color: <?php the_field('secondary_color','option'); ?>;
             --btn-bg: <?php the_field('btn_bg','option'); ?>;
             --btn-text: <?php the_field('btn_text','option'); ?>;
+
         }
     </style>
 
@@ -48,8 +49,4 @@
 </head>
 <body>
 
-<div id="bg-noise"></div>
-<canvas id="matrix"></canvas>
-<div class="gradient-radial"></div>
-
-    
+<div id="bg-noise"></div>   

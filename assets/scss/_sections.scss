@@ -5,7 +5,7 @@
 
     &.cyber {
         clip-path: polygon(0px 25px, 26px 0px, calc(60% - 25px) 0px, 60% 25px, 100% 25px, 100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px), calc(80% - 15px) calc(100% - 0px), 10px calc(100% - 0px), 0% calc(100% - 10px));
-        background-color: black;
+        margin-top: -40px;        
 
         &:after {
             content: " ";
@@ -31,45 +31,100 @@
 }
 
 .section-howitworks {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url('../img/bg-forex2.png');
-    padding-top: 200px;
-    padding-bottom: 0;
+    background-color: #000 !important;
 
-    .robot {
-        max-height: 90vh;
+     .circuit {
         position: absolute;
-        top: 60px;
-        left: 0;
+        &.left {
+            left: 0;
+            bottom: 0;
+        }
+        &.right {
+            right: 0;
+            top: 0;
+        }
+    }
+
+    .machine {
+        width: 90%;
+        position: absolute;
+        bottom: -10%;
+        filter: grayscale(.8);
+    }
+
+    .howitworks-wrapper {
+        position: relative;
+        z-index: 9;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+
+        .howitworks-item {
+            border: 0;
+            padding: 48px 32px 32px;
+            clip-path: polygon(0px 25px, 26px 0px, calc(60% - 25px) 0px, 60% 25px, 100% 25px, 100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px), calc(80% - 15px) calc(100% - 0px), 10px calc(100% - 0px), 0% calc(100% - 10px));
+            background-color: #1b1b1b;
+
+            svg {
+                display: block;
+                margin-bottom: 38px;
+            }
+        }
+    }
+}
+.machine-rings {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.bottom {
+        bottom: 0;
+    }
+
+    .machine-ring1 {
+        -webkit-animation: spin 20s linear infinite;
+        -moz-animation: spin 20s linear infinite;
+        animation: spin 20s linear infinite;
+    }
+
+    .machine-ring2-div {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .machine-ring2 {
+        -webkit-animation: spin 100s linear infinite;
+        -moz-animation: spin 100s linear infinite;
+        animation: spin 100s linear infinite;
     }
 }
 
-.howitworks-wrapper {
-    position: relative;
-    z-index: 9;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 16px;
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
 
-    .howitworks-item {
-        border: 0;
-        padding: 64px 32px;
-        clip-path: polygon(0px 25px, 26px 0px, calc(60% - 25px) 0px, 60% 25px, 100% 25px, 100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px), calc(80% - 15px) calc(100% - 0px), 10px calc(100% - 0px), 0% calc(100% - 10px));
-        background-color: var(--primary-color);
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
 
-        h3 {
-            color: black;
-            margin: 0;
-        }
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 
 .pulser {
     position: absolute;
-    left: 25%;
-    top: 45%;
-    transform: translate(-50%);
+    top: 50%;
+    transform: translateY(-50%);
     background: var(--primary-color);
     width: 130px;
     height: 130px;
@@ -80,10 +135,10 @@
 
     svg {
         display: block;
-        margin-left: 4px;
         fill: black;
     }
 }
+
 .pulse-shadow {
     display: inline-block;
     -webkit-border-radius: 100%;
@@ -91,10 +146,12 @@
     -webkit-animation: pulse-shadow 1.4s infinite;
     animation: pulse-shadow 1.4s infinite;
 }
+
 .pulse-shadow--collection {
     -webkit-animation: pulse-shadow--collection 1.4s infinite;
     animation: pulse-shadow--collection 1.4s infinite;
 }
+
 @-webkit-keyframes pulse-shadow {
     0% {
         -webkit-box-shadow: 0 0 0 0 var(--primary-color);
@@ -130,8 +187,18 @@
 }
 
 .section-forwho {
+    padding-top: 0;
+    margin-top: -50px;
+    background-color: #000;
+    background-image: url(../img/bg-header2-min.png);
     .col-md-4 {
         display: grid;
+    }
+
+    .title {
+        border-top: solid 4px var(--primary-color);
+        margin-top: 40px;
+        padding-top: 120px;
     }
     .box-padding-sm {
         min-height: 380px;
@@ -166,20 +233,44 @@
 }
 
 .section-testimonials {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url('../img/bg-robo2-min.png');
-    background-color: black;
+    background-color: $dark-color;
 
     iframe {
-        @include border-radius;
-        border: solid 1px var(--primary-color);
+        @include box-shadow;
+
+        &.cyber {
+            background-color: var(--primary-color);
+        }
+    }
+
+    .dolar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 140%;
+        background-image: url(../img/dolar.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 9;
+    }
+
+    .chart {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/bg-forex2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 9;
     }
 
     .gradient-radial {
         position: absolute;
         background: radial-gradient(circle, rgba(0, 216, 216, .3) 0%, rgba(0, 0, 0, .4) 40%, rgba(0, 0, 0, .4) 100%);
-        z-index: -1;
+        z-index: 1;
         top: -8vh;
         width: 100%;
         height: calc(100% + 8vh);
@@ -191,12 +282,31 @@
     background-image: url('../img/bg-forex2.png');
     background-repeat: no-repeat;
     background-color: black;
+
+    .danilo-glitch {
+        position: relative;
+        width: 100%;
+        height: 680px;
+    }
+}
+
+.hand {
+    display: block;
+    max-width: 300px;
+    margin: 20px auto 0;
 }
 
 .section-faq {
     background-size: cover;
-    background-image: url('../img/bg-header2-min.png');
+    background-image: url('../img/bg-robo-min.png');
     background-repeat: no-repeat;
+    background-color: var(--primary-color);
+
+    .section-title {
+        h3,p {
+            color: black;
+        }
+    }
 
     #accordion {
         margin: 0px;
@@ -250,55 +360,18 @@
     }
 }
 
-.no-border {
-    border: 0 !important;
+.section-cadastrese {
+    background-image: url('../img/bg-pattern-min.png');
+
+    .machine-rings {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: -1;
+        width: 100%;
+    }
 }
 
-.icon-circle {
-    max-width: 340px;
-    position: absolute;
-    z-index: 9;
-    display: flex;
-    align-items: center;
-    border: solid 1px #333;
-    background: #111;
-    padding: 16px 24px;
-    @include box-shadow;
-
-    img,
-    svg {
-        margin-right: 16px;
-        max-width: 42px;
-        width: 42px;
-    }
-
-    b {
-        font-size: .9rem;
-        display: block;
-        color: var(--primary-color);
-    }
-
-    span {
-        font-size: .8rem;
-    }
-
-    &.circle1 {
-        left: 10vw;
-        bottom: 5vh
-    }
-
-    &.circle2 {
-        left: 8vw;
-        bottom: 50vh;
-    }
-
-    &.circle3 {
-        right: 10vw;
-        bottom: 55vh;
-    }
-
-    &.circle4 {
-        right: 15vw;
-        bottom: 15vh;
-    }
+.no-border {
+    border: 0 !important;
 }
