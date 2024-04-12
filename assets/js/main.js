@@ -55,15 +55,25 @@ jQuery(document).ready(function(){
         });
     });
 
-    gsap.to(".dolar", {
+    gsap.to(".superdom", {
         duration:1.5,
         ease: "none",
-        y: -300,
+        y: -150,
         scrollTrigger: {
-            trigger: ".trigger-dolar",
+            trigger: ".trigger-superdom",
             scrub: 1,
         }, 
     });
+    gsap.to(".superdom2", {
+        duration:3.5,
+        ease: "none",
+        y: -250,
+        scrollTrigger: {
+            trigger: ".trigger-superdom",
+            scrub: 1,
+        }, 
+    });
+
 
     // FAQ accordion
     jQuery('.openText').on('click', function(){

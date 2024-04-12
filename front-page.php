@@ -30,7 +30,7 @@
 </section>
 
 <!-- Testimonials section-->
-<section class="section-default cyber section-testimonials trigger-dolar">
+<section class="section-default cyber section-testimonials trigger-superdom">
     <div class="container">
         <div class="row section-title">
             <div class="col-12 col-md-8 offset-md-2 text-center">
@@ -52,7 +52,8 @@
             </div>
         </div>
     </div>
-    <div class="dolar"></div>
+    <img src="<?php echo THEME_URL ?>assets/img/superdom.png" class="superdom" alt="">
+    <img src="<?php echo THEME_URL ?>assets/img/superdom2.png" class="superdom2" alt="">
     <div class="chart"></div>
     <div class="gradient-radial"></div>
 </section>
@@ -62,7 +63,7 @@
     <div class="container">
         <div class="row d-flex align-items-center">
             <div class="col-12 col-md-4 offset-md-1 position-relative" style="min-height:580px">                
-                <video autoplay loop muted class="robot wow animate__animated animate__fadeInLeft">
+                <video autoplay loop muted class="wow animate__animated animate__fadeInLeft">
                     <source src="<?php echo THEME_URL ?>assets/img/video-hft2.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
@@ -112,7 +113,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md-3 wow animate__animated animate__fadeInUp animate__faster">
+            <div class="col-12 col-md-3 mb-3 mb-lg-0 wow animate__animated animate__fadeInUp animate__faster">
                 <div class="box-padding-sm text-center">
                     <div class="inner">
                         <div class="whoicon mb-3 mb-lg-5 mx-auto">
@@ -122,7 +123,7 @@
                     </div>                        
                 </div>
             </div>
-            <div class="col-12 col-md-3 wow animate__animated animate__fadeInUp animate__fast">
+            <div class="col-12 col-md-3 mb-3 mb-lg-0 wow animate__animated animate__fadeInUp animate__fast">
                 <div class="box-padding-sm text-center">
                     <div class="inner">
                         <div class="whoicon mb-3 mb-lg-5 mx-auto">
@@ -132,7 +133,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-3 wow animate__animated animate__fadeInUp">
+            <div class="col-12 col-md-3 mb-3 mb-lg-0 wow animate__animated animate__fadeInUp">
                 <div class="box-padding-sm text-center">
                     <div class="inner">
                         <div class="whoicon mb-3 mb-lg-5 mx-auto">
@@ -142,7 +143,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-3 wow animate__animated animate__fadeInUp animate__slow">
+            <div class="col-12 col-md-3 mb-3 mb-lg-0 wow animate__animated animate__fadeInUp animate__slow">
                 <div class="box-padding-sm text-center">
                     <div class="inner">
                     <div class="whoicon mb-3 mb-lg-5 mx-auto">
