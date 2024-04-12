@@ -1,0 +1,31 @@
+input,select,textarea {
+    width: 100%;
+    margin: 0 0 8px;
+    padding: 12px;
+    border: 0;
+    background: rgba(255, 255, 255, .2);
+    color: $white-color;
+    border-radius: 4px;
+    outline: none;
+    border: 0;
+}
+
+input[type=submit] {
+    margin-top: 12px;
+}
+
+label {
+    color: $white-color;
+    font-size: .8rem;
+    font-weight: 600;
+    display:block;
+    margin:8px 0;
+}
+
+.wpcf7-response-output {
+    margin: 0
+}
+
+.wpcf7 form .wpcf7-response-output {
+    margin: 0;
+}

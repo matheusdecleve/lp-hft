@@ -2,10 +2,11 @@
     padding: 120px 0;
     position: relative;
     transition: 2s;
+    min-width: 100vw;
 
     &.cyber {
         clip-path: polygon(0px 25px, 26px 0px, calc(60% - 25px) 0px, 60% 25px, 100% 25px, 100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px), calc(80% - 15px) calc(100% - 0px), 10px calc(100% - 0px), 0% calc(100% - 10px));
-        margin-top: -40px;        
+        margin-top: -40px;
 
         &:after {
             content: " ";
@@ -33,12 +34,14 @@
 .section-howitworks {
     background-color: #000 !important;
 
-     .circuit {
+    .circuit {
         position: absolute;
+
         &.left {
             left: 0;
             bottom: 0;
         }
+
         &.right {
             right: 0;
             top: 0;
@@ -63,7 +66,7 @@
             border: 0;
             padding: 48px 32px 32px;
             clip-path: polygon(0px 25px, 26px 0px, calc(60% - 25px) 0px, 60% 25px, 100% 25px, 100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px), calc(80% - 15px) calc(100% - 0px), 10px calc(100% - 0px), 0% calc(100% - 10px));
-            background-color: #1b1b1b;
+            background-color: $dark-color;
 
             svg {
                 display: block;
@@ -72,6 +75,7 @@
         }
     }
 }
+
 .machine-rings {
     position: absolute;
     top: 0;
@@ -99,25 +103,6 @@
         -webkit-animation: spin 100s linear infinite;
         -moz-animation: spin 100s linear infinite;
         animation: spin 100s linear infinite;
-    }
-}
-
-@-moz-keyframes spin {
-    100% {
-        -moz-transform: rotate(360deg);
-    }
-}
-
-@-webkit-keyframes spin {
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-}
-
-@keyframes spin {
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
     }
 }
 
@@ -152,47 +137,38 @@
     animation: pulse-shadow--collection 1.4s infinite;
 }
 
-@-webkit-keyframes pulse-shadow {
-    0% {
-        -webkit-box-shadow: 0 0 0 0 var(--primary-color);
-        box-shadow: 0 0 0 0 var(--primary-color)
-    }
-
-    70% {
-        -webkit-box-shadow: 0 0 5px 55px rgba(255, 255, 255, 0);
-        box-shadow: 0 0 5px 55px rgba(255, 255, 255, 0)
-    }
-
-    100% {
-        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
-        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0)
-    }
-}
-
-@keyframes pulse-shadow {
-    0% {
-        -webkit-box-shadow: 0 0 0 0 var(--primary-color);
-        box-shadow: 0 0 0 0 var(--primary-color)
-    }
-
-    70% {
-        -webkit-box-shadow: 0 0 5px 55px rgba(255, 255, 255, 0);
-        box-shadow: 0 0 5px 55px rgba(255, 255, 255, 0)
-    }
-
-    100% {
-        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
-        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0)
-    }
-}
-
 .section-forwho {
     padding-top: 0;
     margin-top: -50px;
     background-color: #000;
-    background-image: url(../img/bg-header2-min.png);
+    background-image: url(../img/bg-world.webp);
+
     .col-md-4 {
         display: grid;
+    }
+
+    .whoicon {
+        $size: 100px;
+        min-width: $size;
+        max-width: $size;
+        width: $size;
+        min-height: $size;
+        max-height: $size;
+        height: $size;
+        margin-right: 24px;
+        @include border-radius;
+        // color: $black-color;
+        // box-shadow: 0 0 70px var(--primary-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 0;
+
+        img {
+            max-width: 100px;
+            height: auto;
+            object-fit: contain;
+        }
     }
 
     .title {
@@ -200,6 +176,7 @@
         margin-top: 40px;
         padding-top: 120px;
     }
+
     .box-padding-sm {
         min-height: 380px;
         position: relative;
@@ -261,7 +238,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url(../img/bg-forex2.png);
+        background-image: url(../img/bg-forex2.webp);
         background-size: cover;
         background-repeat: no-repeat;
         z-index: 9;
@@ -279,9 +256,15 @@
 
 .section-teacher {
     background-size: cover;
-    background-image: url('../img/bg-forex2.png');
+    background-image: url('../img/bg-forex2.webp');
     background-repeat: no-repeat;
-    background-color: black;
+    background-color: $black-color;
+
+    svg {
+        fill: $black-color;
+        display: inline-block;
+        margin-right: 8px;
+    }
 
     .danilo-glitch {
         position: relative;
@@ -298,12 +281,14 @@
 
 .section-faq {
     background-size: cover;
-    background-image: url('../img/bg-robo-min.png');
+    background-image: url('../img/bg-robo.webp');
     background-repeat: no-repeat;
     background-color: var(--primary-color);
 
     .section-title {
-        h3,p {
+
+        h3,
+        p {
             color: black;
         }
     }
@@ -361,7 +346,8 @@
 }
 
 .section-cadastrese {
-    background-image: url('../img/bg-pattern-min.png');
+    background-image: url('../img/bg-pattern.webp');
+    background-color: $black-color;
 
     .machine-rings {
         position: absolute;

@@ -2,7 +2,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <img src="<?php the_field('logo','option'); ?>" width="280" alt="Logo HFTS" loading="lazy">
+                    <img src="<?php the_field('logo','option'); ?>" width="280" height="161" alt="Logo Mentoria HFT" loading="lazy">
                     <small class="d-block mt-4"><?php echo Date('Y'); ?> Danilo Broker - Todos os direitos reservados.</small>
                 </div>
             </div>

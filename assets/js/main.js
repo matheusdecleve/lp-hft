@@ -38,11 +38,16 @@ jQuery(document).ready(function(){
     bgNoise();
 
     new WOW().init();
+
+    // Para <img>:
+    HTMLImageElement.prototype.hasOwnProperty('loading');
+
+    // Para <iframe>:
+    HTMLIFrameElement.prototype.hasOwnProperty('loading');
    
     // Scroll to section
     jQuery('.scroll-to-section').on('click', function (e) {
         e.preventDefault();
-        var navbarSelector = jQuery('.navbar');
         var target = jQuery(this).attr('href');
 
         jQuery('html, body').animate({
@@ -59,44 +64,6 @@ jQuery(document).ready(function(){
             scrub: 1,
         }, 
     });
-
-    gsap.to(".circle1", {
-        duration:2.5,
-        ease: "none",
-        y: -250,
-        scrollTrigger: {
-            trigger: ".trigger-circle",
-            scrub: 1,
-        }, 
-    });
-    gsap.to(".circle2", {
-        duration:2.5,
-        ease: "none",
-        y: -80,
-        scrollTrigger: {
-            trigger: ".trigger-circle",
-            scrub: 1,
-        }, 
-    });
-    gsap.to(".circle3", {
-        duration:2.5,
-        ease: "none",
-        y: -350,
-        scrollTrigger: {
-            trigger: ".trigger-circle",
-            scrub: 1,
-        }, 
-    });
-    gsap.to(".circle4", {
-        duration:2.5,
-        ease: "none",
-        y: -60,
-        scrollTrigger: {
-            trigger: ".trigger-circle",
-            scrub: 1,
-        }, 
-    });
-
 
     // FAQ accordion
     jQuery('.openText').on('click', function(){

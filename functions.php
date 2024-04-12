@@ -36,93 +36,31 @@ class Hft
 	static function custom_scripts()
 	{
 		wp_register_style('bootstrap', THEME_URL . 'assets/css/bootstrap.min.css', null, null, 'all');
-		wp_register_style('owlcarousel', THEME_URL . 'assets/css/owlcarousel/owl.carousel.min.css', null, null, 'all');
-		wp_register_style('owlcarouseltheme', THEME_URL . 'assets/css/owlcarousel/owl.theme.default.min.css', null, null, 'all');
 		wp_register_style('styles', THEME_URL . 'assets/css/styles.css', null, null, 'all');		
 		wp_register_style('styles-mobile', THEME_URL . 'assets/css/styles-mobile.css', null, null, '(max-width: 768px)');
 		wp_register_style('animate', THEME_URL . 'assets/css/animate.min.css', null, null, 'all');		
+		wp_register_style('owlcarousel', THEME_URL . 'assets/css/owlcarousel/owl.carousel.min.css', null, null, 'all');
+		wp_register_style('owlcarouseltheme', THEME_URL . 'assets/css/owlcarousel/owl.theme.default.min.css', null, null, 'all');
 
 		wp_enqueue_style('bootstrap');
-		wp_enqueue_style('owlcarousel');
-		wp_enqueue_style('owlcarouseltheme');
 		wp_enqueue_style('styles');
 		wp_enqueue_style('styles-mobile');
 		wp_enqueue_style('animate');
+		wp_enqueue_style('owlcarousel');
+		wp_enqueue_style('owlcarouseltheme');
 
-		// wp_register_script('bootstrapbundle', THEME_URL . 'assets/js/bootstrap.bundle.min.js', array(), '0.1.', true);
-		// wp_register_script('popper', THEME_URL . 'assets/js/popper.js', array(), '0.1.', true);
-		// wp_register_script('bootstrap', THEME_URL . 'assets/js/bootstrap.min.js', array(), '0.1.', true);
 		wp_register_script('jquery', THEME_URL . 'assets/js/jquery.min.js', array(), '0.1', true);
 		wp_register_script('owl', THEME_URL . 'assets/js/owl.carousel.min.js', array(), '0.1', true);
 		wp_register_script('wow', THEME_URL . 'assets/js/wow.min.js',null, null, 'all');
 		wp_register_script('main', THEME_URL . 'assets/js/main.js',null, null, 'all');
-		wp_register_script('matrix', THEME_URL . 'assets/js/matrix.js',null, null, 'all');
-		// wp_register_script('counter', THEME_URL . 'assets/js/counter.js',null, null, 'all');
 
-		// wp_enqueue_script('bootstrapbundle');
-		// wp_enqueue_script('popper');
-		// wp_enqueue_script('bootstrap');
 		wp_enqueue_script('jquery');
 		wp_enqueue_script('owl');
 		wp_enqueue_script('wow');
 		wp_enqueue_script('main');
-		wp_enqueue_script('matrix');
-		// wp_enqueue_script('counter');
 		
 		wp_localize_script('functions', 'ajax_object', array('ajax_url' => admin_url('admin-ajax.php')));		
 	}
-
-	static function custom_cpts()
-	{		
-		$attr = array(
-			'public'        => true,
-			'show_in_admin_bar'   => true,
-			'show_ui' => true,
-			'menu_position'       => 21,
-			'menu_icon'           => 'dashicons-table-row-after',
-			'has_archive'   => false,
-			'rewrite'		=> array('slug' => 'telhas', 'with_front' => false),
-			'supports'      => array('title', 'editor', 'custom-fields', 'thumbnail'),
-			'labels'        => array(
-				'name'                  => 'Telhas',
-				'add_new'               => 'Adicionar Telha',
-				'add_new_item'          => 'Adicionar nova Telha',
-				'edit_item'             => 'Editar Telha',
-				'new_item'              => 'Nova Telha',
-				'view_item'             => 'Visualizar Telhas',
-				'search_items'          => 'Pesquisar Telhas',
-				'not_found'             => 'Nenhuma Telha foi encontrado',
-				'not_found_in_trash'    => 'Nenhuma Telha foi encontrado na lixeira',
-				'all_items'             => 'Todas as Telhas'
-			)
-		);
-		register_post_type('telhas', $attr);
-
-		$attr = array(
-			'public'        => true,
-			'show_in_admin_bar'   => true,
-			'show_ui' => true,
-			'menu_position'       => 21,
-			'menu_icon'           => 'dashicons-table-row-after',
-			'has_archive'   => false,
-			'rewrite'		=> array('slug' => 'perfis', 'with_front' => false),
-			'supports'      => array('title', 'editor', 'custom-fields', 'thumbnail'),
-			'labels'        => array(
-				'name'                  => 'Perfis',
-				'add_new'               => 'Adicionar Perfis',
-				'add_new_item'          => 'Adicionar novo Perfis',
-				'edit_item'             => 'Editar Perfis',
-				'new_item'              => 'Novo Perfis',
-				'view_item'             => 'Visualizar Perfis',
-				'search_items'          => 'Pesquisar Perfis',
-				'not_found'             => 'Nenhum Perfis foi encontrado',
-				'not_found_in_trash'    => 'Nenhum Perfis foi encontrado na lixeira',
-				'all_items'             => 'Todos os Perfis'
-			)
-		);
-		register_post_type('perfis', $attr);
-	}
-
 
 	static function my_body_classes($classes)
 	{
@@ -147,7 +85,7 @@ class Hft
 
 	static function remove_footer_admin()
 	{
-		echo "HFTs";
+		echo "Mentoria HFT - Danilo Broker";
 	}
 
 	static function my_login_logo_url()
@@ -186,7 +124,6 @@ if (function_exists('acf_add_options_page')) {
 register_activation_hook(__FILE__, array('Hft', 'activation'));
 register_deactivation_hook(__FILE__, array('Hft', 'deactivation'));
 
-// add_action('init', array('Hft', 'custom_cpts'));
 add_action('after_setup_theme', array('Hft', 'init'));
 
 define('SITE_URL', get_home_url() . '/');
